@@ -1,0 +1,112 @@
+:root {
+    --mainWhite: #f5f5f5;
+    --mainDark: #333333;
+    --mainOrange: #ff8552;
+    --mainGreen: #297373;
+    --alert:#f59898;
+}
+
+body{
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--mainWhite);
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    border: 1px solid var(--mainOrange);
+    padding: 30px;
+    margin-top: 20px;
+    width: 45%;
+    position: relative;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+button{
+    background-color: transparent;
+    border: 1px solid var(--mainOrange);
+    border-radius: 5px;
+    color: var(--mainOrange);
+    cursor: pointer;
+    padding: 10px 25px;
+    font-size: 15px !important;
+}
+
+button:hover{
+    background-color: var(--mainDark);
+    color: white;  
+    border: 1px solid var(--mainDark); 
+}
+
+button.btn.submitBtn {
+    margin-top: 10px;
+}
+
+a.close-btn {
+    position: absolute;
+    right: 30px;
+    top: 32px;
+    background: var(--mainOrange);
+    padding: 3px 10px;
+    color: white;
+}
+
+.fa-times:before {
+    content: "\f00d";
+}
+
+a.close-btn:hover{
+    background-color: var(--mainDark);
+}
+
+.alert{
+    background-color: var(--alert);
+    padding: 5px 10px;
+    width: 70%;
+}
+
+.hide{
+    display: none;
+}
+
+
+
+textarea#question-input, textarea#answer-input {
+    border: 1px solid var(--mainOrange);
+    width: 100%;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.add-question-sec {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-data {
+    background: white;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    width: calc(33% - 57px);
+}
+p.show-hide-ans {
+    background: var(--mainOrange);
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    width: 50%;
+}
+.edit-del-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}

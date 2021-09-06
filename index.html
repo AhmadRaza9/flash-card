@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="shortcut icon" href="http://osmand.net/images/favicons/android-chrome-512x512.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Save Ans/Qst</title>
+</head>
+<body>
+    <section class="container">
+        <h1>FlashCard</h1>
+        <button class="add-ques-btn">Add Question</button>
+        <div class="card question-card hide">
+            <div class="alert-and-btn-sec">
+                <a href="#" class="close-btn mt-0">
+                 <i class="fas fa-times"></i>
+                </a>
+                <div class="alert hide">cannot add empty values</div>
+            </div>
+            <form id="question-form">
+             <!-- single input -->
+             <h5 class="text-capitalize">question</h5>
+             <div class="form-group">
+              <textarea id="question-input" rows="3"></textarea>
+             </div>
+             <!-- end of single input -->
+             <!-- single input -->
+             <h5 class="text-capitalize">answer</h5>
+             <div class="form-group">
+              <textarea id="answer-input" rows="3"></textarea>
+             </div>
+             <!-- end of single input -->
+             <button type="submit" class="btn submitBtn text-capitalize w-50">save</button>
+            </form>
+           </div>
+           <div class="add-question-sec">
+            
+           </div>
+    </section>
+</body>
+</html>
